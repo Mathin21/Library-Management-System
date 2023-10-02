@@ -93,11 +93,28 @@ body{
     cursor: pointer;
 }
 
+.form-group input[type="button"] {
+    background-color: rgb(22, 140, 180);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .form-group input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.form-group input[type="button"]:hover {
     background-color: #0056b3;
 }
 
 #add,#delete,#issue,#return,#quit{
     margin-top: 10px;
     margin-left: 220px;
+}
+
+.table-cell {
+    padding:10px; 
 }
