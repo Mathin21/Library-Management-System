@@ -1,26 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library Management System</title>
+    <title>Add Book Details</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="heading">
-        <h1>Library Management System</h1>
+        <h1>Add Book Details</h1>
     </div>
+    <div class="container">
+        <form method="post" action="add_book.php">
+            <div class="form-group">
+                <label for="bookID">Book ID:</label>
+                <input type="text" id="bookID" name="bookID">
+            </div>
 
-    <div class="action-buttons">
-        <button onclick="openAddBookPage()">Add Book Details</button>
-        <button onclick="openDeleteBookPage()">Delete Book</button>
-        <button onclick="openViewBookPage()">View Book List</button>
-        <button onclick="openIssueBookPage()">Issue Book to Student</button>
-        <button onclick="openReturnBookPage()">Return Book</button>
-    </div>
+            <div class="form-group">
+                <label for="bookTitle">Textbook Title:</label>
+                <input type="text" id="bookTitle" name="bookTitle">
+            </div>
 
-    <div class="visit">
-        <p>Thank You! Visit Again.</p>
+            <div class="form-group">
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author">
+            </div>
+
+            <div class="form-group">
+                <label for="status">Status(Available/Issued):</label>
+                <select id="status" name="status">
+                    <option value="available">Available</option>
+                    <option value="issued">Issued</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" id="add" value="Add">
+                <input type="button" id="quit" value="Quit">
+            </div>
+        </form>
     </div>
     <script src="script.js"></script>
 </body>
