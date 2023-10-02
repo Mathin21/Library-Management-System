@@ -11,21 +11,22 @@
         <h1>Issue Book</h1>
     </div>
     <div class="container">
-        <form style="margin-top: 50px;margin-bottom: 50px;">
+        <form style="margin-top: 50px;margin-bottom: 50px;" action="issue_book.php" method="post">
             <div class="form-group">
                 <label for="bookID">Book ID:</label>
                 <input type="text" id="bookID" name="bookID">
             </div>
 
             <div class="form-group">
-                <label for="issuedTo">Issued To:</label>
+                <label for="issuedTo">Student ID:</label>
                 <input type="text" id="issuedTo" name="issuedTo">
+            </div>
+            <div class="form-group">
+                <input type="submit" id="issue" value="Issue">
+                <input type="button" id="quit" value="Quit">
             </div>
         </form>
     </div>
-    <div class="form-group">
-        <input type="submit" id="issue" value="Issue">
-        <input type="submit" id="quit" value="Quit">
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>
